@@ -158,7 +158,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["txt"]) )
+@bot.on_message(filters.command(["yt"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -391,7 +391,7 @@ async def txt_handler(bot: Client, m: Message):
 
 # Advance
 
-@bot.on_message(filters.command(["radha"]) )
+@bot.on_message(filters.command(["txt"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**📁Send me the TXT file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -543,8 +543,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} @Ankit_Shakya73 {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} @Ankit_Shakya73.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
+                cc = f'**[▶️] Vid_ID :** {str(count).zfill(3)}\n\n**Video Title :** {name1}\n\n**Batch Name :** {b_name}\n\n**Extracted By ➤ {CR}**'
+                cc1 = f'**[📑] Pdf_ID :** {str(count).zfill(3)}\n\n**File Title :** {name1}\n\n**Batch Name :** {b_name}\n\n**Extracted By ➤ {CR}**'
                     
                 
                 if "drive" in url:
